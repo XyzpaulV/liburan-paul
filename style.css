@@ -1,0 +1,26 @@
+.galeri-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.foto img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.foto img:hover {
+  transform: scale(1.05);
+}
+
+.foto p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0078d4;
+}

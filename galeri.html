@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Liburan Paul</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #0077b6;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #023e8a;
+    }
+
+    /* Galeri grid */
+    .galeri {
+      column-count: 3;
+      column-gap: 15px;
+      padding: 30px;
+    }
+
+    .galeri img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .galeri img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 800px) {
+      .galeri { column-count: 2; }
+    }
+
+    @media (max-width: 500px) {
+      .galeri { column-count: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeri Liburan Paul 📸</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="galeri.html">Galeri</a>
+    </nav>
+  </header>
+
+<section class="galeri">
+  <img src="images/paul1.jpg" alt="Liburan di Pantai">
+  <img src="images/paul2.jpg" alt="Liburan di Gunung">
+  <img src="images/paul3.jpg" alt="Liburan di Kota">
+  <img src="images/paul4.jpg" alt="Foto Bareng Teman">
+  <img src="images/paul5.jpg" alt="Liburan Gunung">
+  <img src="images/paul6.jpg" alt="Liburan Gunung">
+
+</section>
+
+
+  <footer>
+    &copy; 2025 Liburan Paul di Flores
+  </footer>
+
+</body>
+</html>
